@@ -13,23 +13,25 @@ export const Navbar = () => {
           </div>
           <ul className="p-8 flex gap-8 justify-center items-center text-white font-medium font-fira-code">
             <li>
-              <a href="#">
+              <a href="#" className="hover:text-[#C778DD]">
                 <span className="text-[#C778DD]">#</span>Home
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" className="hover:text-[#C778DD]">
                 <span className="text-[#C778DD]">#</span>works
               </a>
             </li>
             <li>
-              <a href="#">
-                <span className="text-[#C778DD]">#</span>about-me
+              <a href="#" className="hover:text-[#C778DD]">
+                <span className="text-[#C778DD]">#</span>
+                about-me
               </a>
             </li>
             <li>
-              <a href="#">
-                <span className="text-[#C778DD]">#</span>contact
+              <a href="#" className="hover:text-[#C778DD]">
+                <span className="text-[#C778DD] ">#</span>
+                contact
               </a>
             </li>
           </ul>
