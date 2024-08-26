@@ -34,3 +34,8 @@ body {
   background-color: var(--bg-color);
   color: var(--primary-color);
 }
+
+/* Agrega un margen inferior adecuado para el contenedor de Skills */
+.skills-container {
+  margin-bottom: 2rem; /* Ajusta el tamaño según tus necesidades */
+}
