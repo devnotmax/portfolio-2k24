@@ -1,20 +1,12 @@
 import Image from "next/image";
+import TitleHeader from "./TitleHeader";
 
 export const Skills = () => {
     return (
         <div className="flex justify-center items-center mt-20 mb-96"> {/* Aumentar margin-bottom */}
-            <div className="p-10 flex justify-center w-[80%] h-auto">
-                <div className="text-white font-fira-code font-semibold text-2xl min-h-[300px] w-full">
-                    <header className="grid grid-cols-1 md:grid-cols-[20%_80%] items-center w-full mb-10">
-                        <div className="text-center md:text-left flex justify-center md:justify-start">
-                            <p className="text-white text-2xl font-fira-code font-semibold">
-                                <span className="text-[#C778DD]">#</span>Habilidades
-                            </p>
-                        </div>
-                        <div className="hidden md:block">
-                            <hr className="w-full border-[#C778DD] border-2" />
-                        </div>
-                    </header>
+            <div className="flex justify-center h-auto">
+                <div className="text-white font-fira-code font-semibold text-2xl min-h-[300px] w-full max-w-[1200px]">
+                    <TitleHeader title="Habilidades" ></TitleHeader>
                     <section className="grid grid-cols-1 md:grid-cols-2 gap-8 h-auto">
                         <div className="w-full mb-10 md:mb-0">
                             <h4 className="mb-6 underline">
