@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { DownloadCV } from "./downloadCV";
+import Link from "next/link";
 
 // Cambiar luego el <a> a Link para poder manejar las rutas con Next.js bien
 // Soy Desarrollador Front-End y especializado en el stack MERN (MongoDB, Express, React, Node.js).
@@ -25,7 +26,7 @@ export const Hero: React.FC = () => {
                             </p>
                             <div className="flex flex-col md:flex-row gap-2 mt-4">
                                 <button className="border-2 border-[#C778DD] p-2 text-sm hover:border-white hover:text-[#C778DD]">
-                                    <a href="#contact">Contactame!!</a>
+                                    <Link href="/contact">Contactame!!</Link>
                                     {/* Cambiar luego por Links */}
                                 </button>
                                 <DownloadCV />
