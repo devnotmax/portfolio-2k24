@@ -1,6 +1,6 @@
 import { ContactForm } from "../../components/ContactForm";
 
-export const contact = () =>{
+export const contactPage = () =>{
     return (
         <div className="container min-h-screen">
             <ContactForm></ContactForm>
@@ -8,4 +8,4 @@ export const contact = () =>{
     )
 }
 
-export default contact;
+export default contactPage;
