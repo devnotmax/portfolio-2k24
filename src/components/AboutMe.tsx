@@ -4,17 +4,19 @@ import TitleHeader from "./TitleHeader";
 
 export const AboutMe = () => (
   <div className="mt-28 flex justify-center items-center">
-    <div className="w-full mt-10 max-w-[1200px] text-white font-fira-code font-semibold text-lg lg:text-2xl">
+    <div className="container w-full mt-10 max-w-[1200px] text-white font-fira-code font-semibold text-lg lg:text-2xl">
       <TitleHeader title="Sobre mi" />
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8">
-        <Image
-          src="/develop.jpeg"
-          alt="profile"
-          width={600}
-          height={600}
-          className="w-full h-auto rounded-2xl"
-        />
-        <div className="text-[1rem] lg:text-[1.20rem] space-y-4">
+        <div className="container p-8">
+          <Image
+            src="/develop.jpeg"
+            alt="profile"
+            width={600}
+            height={600}
+            className="w-full h-auto rounded-2xl"
+          />
+        </div>
+        <div className="text-[1rem] lg:text-[1.20rem] space-y-4 p-8">
           <p>
             <span className="text-[#C778DD]">¡Soy Maximiliano!</span> <br />
             <span className="text-[#C778DD]">Desarrollador Front-End</span>{" "}

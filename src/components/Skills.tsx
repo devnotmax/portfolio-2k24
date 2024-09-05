@@ -3,12 +3,13 @@ import TitleHeader from "./TitleHeader";
 
 export const Skills = () => {
     return (
-        <div className="flex justify-center items-center mt-20 mb-96"> {/* Aumentar margin-bottom */}
-            <div className="flex justify-center h-auto">
-                <div className="text-white font-fira-code font-semibold text-2xl min-h-[300px] w-full max-w-[1200px]">
-                    <TitleHeader title="Habilidades" ></TitleHeader>
-                    <section className="grid grid-cols-1 md:grid-cols-2 gap-8 h-auto">
-                        <div className="w-full mb-10 md:mb-0">
+        <div className="flex justify-center items-center mt-20"> {/* Ajuste de margen inferior */}
+            <div className="container mx-auto px-4"> {/* Asegura que el contenido esté centrado y no se salga */}
+                <div className="text-white font-fira-code font-semibold text-2xl">
+                    <TitleHeader title="Habilidades" />
+                    <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        {/* Column for Certifications */}
+                        <div className="w-full">
                             <h4 className="mb-6 underline">
                                 <span className="text-[#C778DD]">#</span>
                                 Certificaciones
@@ -20,8 +21,7 @@ export const Skills = () => {
                                         href="https://www.itmaster.app/certificates?id=ITMAP402023WFGUKVAFMPEAIKA"
                                     >
                                         <span className="text-[#C778DD] hover:underline">
-                                            Argentina Programa 4.0 (IT Master
-                                            Academy)
+                                            Argentina Programa 4.0 (IT Master Academy)
                                         </span>{" "}
                                         - HTML y CSS
                                     </a>
@@ -32,8 +32,7 @@ export const Skills = () => {
                                         href="https://www.itmaster.app/certificates?id=ITMAP402023LIUZKGTWDAPQSNF"
                                     >
                                         <span className="text-[#C778DD] hover:underline">
-                                            Argentina Programa 4.0 (IT Master
-                                            Academy)
+                                            Argentina Programa 4.0 (IT Master Academy)
                                         </span>{" "}
                                         - Programación Front-End
                                     </a>
@@ -51,7 +50,7 @@ export const Skills = () => {
                                 </li>
                                 <li>
                                     <a href="" target="_blank">
-                                        <span className="text-[#C778DD]">
+                                        <span className="text-[#C778DD] hover:underline">
                                             SoyHenry
                                         </span>{" "}
                                         - Programación Full Stack -{" "}
@@ -62,15 +61,15 @@ export const Skills = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 max-h-[400px] md:max-h-[200px] w-full">
+
+                        {/* Column for Skills */}
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             {/* Skill Categories */}
-                            <div>
-                                <article className="border-[1px] border-white w-full min-h-[100px] h-auto flex flex-col mb-8 md:mb-10">
-                                    <div className="w-full">
-                                        <h4 className="border-b-[1px] border-white w-full py-2 text-center">
-                                            Lenguajes
-                                        </h4>
-                                    </div>
+                            <div className="flex flex-col">
+                                <article className="border-[1px] border-white flex-1 flex flex-col">
+                                    <h4 className="border-b-[1px] border-white py-2 text-center">
+                                        Lenguajes
+                                    </h4>
                                     <div className="flex flex-wrap gap-2 p-4">
                                         <Image
                                             src="/typescript.svg"
@@ -87,13 +86,11 @@ export const Skills = () => {
                                     </div>
                                 </article>
                             </div>
-                            <div>
-                                <article className="border-[1px] border-white w-full min-h-[100px] h-auto flex flex-col mb-8 md:mb-10">
-                                    <div className="w-full">
-                                        <h4 className="border-b-[1px] border-white w-full py-2 text-center">
-                                            Databases
-                                        </h4>
-                                    </div>
+                            <div className="flex flex-col">
+                                <article className="border-[1px] border-white flex-1 flex flex-col">
+                                    <h4 className="border-b-[1px] border-white py-2 text-center">
+                                        Databases
+                                    </h4>
                                     <div className="flex flex-wrap gap-2 p-4">
                                         <Image
                                             src="/mongodb.svg"
@@ -110,13 +107,11 @@ export const Skills = () => {
                                     </div>
                                 </article>
                             </div>
-                            <div>
-                                <article className="border-[1px] border-white w-full min-h-[100px] h-auto flex flex-col mb-8 md:mb-10">
-                                    <div className="w-full">
-                                        <h4 className="border-b-[1px] border-white w-full py-2 text-center">
-                                            Tools
-                                        </h4>
-                                    </div>
+                            <div className="flex flex-col">
+                                <article className="border-[1px] border-white flex-1 flex flex-col">
+                                    <h4 className="border-b-[1px] border-white py-2 text-center">
+                                        Tools
+                                    </h4>
                                     <div className="flex flex-wrap gap-2 p-4">
                                         <Image
                                             src="/figma.svg"
@@ -169,14 +164,12 @@ export const Skills = () => {
                                     </div>
                                 </article>
                             </div>
-                            <div>
-                                <article className="border-[1px] border-white w-full min-h-[100px] h-auto flex flex-col mb-8 md:mb-10">
-                                    <div className="w-full">
-                                        <h4 className="border-b-[1px] border-white w-full py-2 text-center">
-                                            Frameworks
-                                        </h4>
-                                    </div>
-                                    <div className="flex flex-wrap gap-2 p-4 items-center">
+                            <div className="flex flex-col">
+                                <article className="border-[1px] border-white flex-1 flex flex-col">
+                                    <h4 className="border-b-[1px] border-white py-2 text-center">
+                                        Frameworks
+                                    </h4>
+                                    <div className="flex flex-wrap gap-2 p-4">
                                         <Image
                                             src="/react.svg"
                                             alt="React"
@@ -201,14 +194,12 @@ export const Skills = () => {
                                     </div>
                                 </article>
                             </div>
-                            <div>
-                                <article className="border-[1px] border-white w-full min-h-[100px] h-auto flex flex-col mb-8 md:mb-10">
-                                    <div className="w-full">
-                                        <h4 className="border-b-[1px] border-white w-full py-2 text-center">
-                                            Others
-                                        </h4>
-                                    </div>
-                                    <div className="flex flex-wrap gap-2 p-4 items-center">
+                            <div className="flex flex-col">
+                                <article className="border-[1px] border-white flex-1 flex flex-col">
+                                    <h4 className="border-b-[1px] border-white py-2 text-center">
+                                        Others
+                                    </h4>
+                                    <div className="flex flex-wrap gap-2 p-4">
                                         <Image
                                             src="/css.svg"
                                             alt="CSS"

@@ -2,7 +2,7 @@ import React from "react";
 
 export const Sidebar = () => {
   return (
-    <aside className="bg-[#282C33] w-16 flex flex-col items-center  fixed left-0 top-0 h-full">
+    <aside className="bg-transparent w-16 flex flex-col items-center  fixed left-0 top-0 h-full">
       <img src="/line.svg" />
       <ul className="space-y-6 mt-2">
         <li>

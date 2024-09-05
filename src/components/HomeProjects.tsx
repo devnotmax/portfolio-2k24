@@ -4,32 +4,30 @@ import TitleHeader from "../components/TitleHeader";
 export const HomeProjects = () => {
   return (
     <div className="p-8 flex flex-col items-center">
-      <div className="w-full max-w-[1200px]">
+      <div className="container">
         <TitleHeader title="Proyectos" />
-
-
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center">
+        <section className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-items-center">
           <ProjectsCards
-            title="http invaders"
+            title="Http invaders"
             technologies={["react", "typescript", "tailwind"]}
             description="WebApp para consultas HTTP a APIs."
             img="/projects/http invaders.jpg"
-            live="www.pablito.com"
-            github="github.com/devnotmax"
+            live="https://http-invader.vercel.app/"
+            github="https://github.com/devnotmax/http-invader"
           />
           <ProjectsCards
-            title="http invaders"
-            technologies={["react", "typescript", "tailwind"]}
-            description="WebApp para consultas HTTP a APIs."
-            img="/projects/http invaders.jpg"
-            live="www.pablito.com"
-            github="github.com/devnotmax"
+            title= "Iturnito"
+            technologies= {["NextJS", "TailwindCSS", "TypeScript", "Express", "postgreSQL"]}
+            description= "Sistema de gestión de turnos. Creado como proyecto final del modulo 3 de la carrera de Programación fullstack en SoyHenry."
+            img = "/projects/iTurnito.png"
+            live = "https://github.com/devnotmax/iTurnito"
+            github =  "https://github.com/devnotmax/iTurnito"
           />
           <ProjectsCards
-            title="http invaders"
-            technologies={["react", "typescript", "tailwind"]}
-            description="WebApp para consultas HTTP a APIs."
-            img="/projects/http invaders.jpg"
+            title="Studify"
+            technologies={["Html", "Css", "Javascript"]}
+            description="Pomodoro App. Creada con html, css y javascript."
+            img="/projects/studify-app.jpg"
             live="www.pablito.com"
             github="github.com/devnotmax"
           />
