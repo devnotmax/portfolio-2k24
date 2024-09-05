@@ -1,13 +1,11 @@
 import AboutMe from "../../components/AboutMe";
 
-export const about = () =>{
+const AboutPage = () => {
     return (
         <div className="container">
-            <AboutMe>
-
-            </AboutMe>
+            <AboutMe />
         </div>
-    )
-}
+    );
+};
 
-export default about;
+export default AboutPage;
