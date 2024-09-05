@@ -1,9 +1,10 @@
 import React from "react";
+import Image from "next/image";
 
 export const Sidebar = () => {
   return (
     <aside className="bg-transparent w-16 flex flex-col items-center  fixed left-0 top-0 h-full">
-      <img src="/line.svg" />
+      <Image src="/line.svg" width={1} height={300} alt="line"></Image>
       <ul className="space-y-6 mt-2">
         <li>
           <a
@@ -12,7 +13,8 @@ export const Sidebar = () => {
             rel="noopener noreferrer"
             className="hover:text-[#FF00FF]"
           >
-            <img src="/discord-icon.svg" alt="Discord" className="w-7 h-7" />
+            {/* <img src="/discord-icon.svg" alt="Discord" className="w-7 h-7" /> */}
+            <Image src="/discord-icon.svg" alt="Discord" width={20} height={20} className="w-7 h-7"></Image>
           </a>
         </li>
         <li>
@@ -21,7 +23,8 @@ export const Sidebar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/linkedin-icon.svg" alt="Linkedin" className="w-7 h-7" />
+            {/* <img src="/linkedin-icon.svg" alt="Linkedin" className="w-7 h-7" /> */}
+            <Image src="/linkedin-icon.svg" alt="Linkedin" width={20} height={20} className="w-7 h-7"></Image>
           </a>
         </li>
         <li>
@@ -30,7 +33,8 @@ export const Sidebar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/github-icon.svg" alt="LinkedIn" className="w-7 h-7" />
+            {/* <img src="/github-icon.svg" alt="LinkedIn" className="w-7 h-7" /> */}
+            <Image src="/github-icon.svg" alt="LinkedIn" width={20} height={20} className="w-7 h-7"></Image>
           </a>
         </li>
         {/* Añadir más redes sociales aquí */}
