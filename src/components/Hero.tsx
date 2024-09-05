@@ -7,8 +7,8 @@ import { DownloadCV } from "./downloadCV";
 export const Hero: React.FC = () => {
     return (
         <>
-            <div className="flex justify-center mt-8 px-4">
-                <div className="p-8 bg-[#282C33] w-full md:w-[80%] mx-auto rounded-lg">
+            <div className="flex justify-center mt-8 p-8">
+                <div className="container md:w-[80%] mx-auto rounded-lg">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                         <div className="text-white font-fira-code font-medium text-2xl md:text-3xl">
                             <p>

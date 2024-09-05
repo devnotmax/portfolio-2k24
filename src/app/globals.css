@@ -29,6 +29,12 @@
   font-family: var(--font-fira-code);
 }
 
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 body {
   background-color: var(--bg-color);

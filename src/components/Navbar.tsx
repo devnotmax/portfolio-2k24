@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Navbar = () => {
     return (
         <main>
@@ -31,24 +33,24 @@ export const Navbar = () => {
                     </div>
                     <ul className="p-4 md:p-8 flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-center text-white font-medium font-fira-code hidden md:flex">
                         <li className="whitespace-nowrap">
-                            <a href="#" className="hover:text-[#C778DD]">
+                            <Link href="/" className="hover:text-[#C778DD]">
                                 <span className="text-[#C778DD]">#</span>Home
-                            </a>
+                            </Link>
                         </li>
                         <li className="whitespace-nowrap">
-                            <a href="#" className="hover:text-[#C778DD]">
+                            <Link href="/works" className="hover:text-[#C778DD]">
                                 <span className="text-[#C778DD]">#</span>Works
-                            </a>
+                            </Link>
                         </li>
                         <li className="whitespace-nowrap">
-                            <a href="#" className="hover:text-[#C778DD]">
+                            <Link href="/about" className="hover:text-[#C778DD]">
                                 <span className="text-[#C778DD]">#</span>About Me
-                            </a>
+                            </Link>
                         </li>
                         <li className="whitespace-nowrap">
-                            <a href="#" className="hover:text-[#C778DD]">
+                            <Link href="/contact" className="hover:text-[#C778DD]">
                                 <span className="text-[#C778DD]">#</span>Contact
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
