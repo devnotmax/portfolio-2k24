@@ -25,7 +25,7 @@ export const CardProject = ({
   };
 
   return (
-    <div className="container min-h-[300px] bg-[#333030] shadow-lg grid grid-cols-2 rounded-lg overflow-hidden">
+    <div className="container min-h-[300px] bg-[#ffaff460] shadow-lg grid grid-cols-2 rounded-lg overflow-hidden">
       <div className="grid grid-cols-5 grid-rows-5 gap-4">
         <div className="col-span-3 row-span-5 flex justify-center items-center p-6">
           <Image src={img} alt="logo" width={330.58} height={201} className="max-w-full max-h-full flex justify-center items-center rounded-lg"></Image>

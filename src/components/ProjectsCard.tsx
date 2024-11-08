@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default interface Props {
   title: string;
@@ -13,38 +14,44 @@ export const ProjectsCards = ({
   title,
   technologies,
   description,
-  img,
   live,
   github,
 }: Props) => {
-  const tecnologias = technologies.join(" ");
   return (
-    <div className="flex justify-center w-full mt-10">
-      <div className="flex flex-col w-full max-w-xs h-auto">
-        <div className="text-white font-fira-code font-medium min-h-[400px] flex flex-col items-center border-[1px] border-white">
-          <div className="flex flex-col justify-center items-center">
-            <Image src={img} alt="logo" width={330.58} height={201}></Image>
-            <h4 className="p-4 border-t-[1px] border-b-[1px] border-white w-full justify-center items-center text-center">
-              {tecnologias}
-            </h4>
-          </div>
-          <div className="p-2 gap-1">
-            <p className="text-xl">{title}</p>
-            <p className="text-sm mt-2 text-gray-500">{description}</p>
-          </div>
-          <div className="flex mt-2 w-full p-6 justify-start gap-4">
-            <button className="border-2 border-[#C778DD] p-2 text-sm hover:border-white hover:text-[#C778DD]">
-              <a href={live}>
-                Live <i className="bx bx-subdirectory-right"></i>
-              </a>
+    <div className="flex flex-col w-full mt-10 border border-white border-opacity-15 rounded-xl h-full p-4">
+      <div className="mb-2">
+        <h2 className="text-2xl font-inter text-white font-bold">{title}</h2>
+      </div>
+      <div className="mb-4 h-20 overflow-hidden flex-shrink-0">
+        <p className="text-gray-500 text-sm font-inter font-medium">{description}</p>
+      </div>
+      <div className="flex flex-wrap gap-2 mb-4 items-center">
+        {technologies.map((tec) => (
+          <span
+            key={tec}
+            className="text-white bg-gray-600 bg-opacity-60 font-inter font-medium text-sm px-3 py-1 rounded-full"
+          >
+            {tec}
+          </span>
+        ))}
+      </div>
+      <div className="flex justify-between items-center gap-4 mt-auto">
+        {live && (
+          <Link href={live}>
+            <button className="px-3 py-1 rounded-md bg-gray-400 flex justify-center items-center text-white gap-2 shadow-md bg-opacity-60 hover:bg-opacity-80 hover:bg-gray-300 transition duration-200 ease-in-out">
+              <i className="bx bx-globe text-2xl"></i>
+              <p className="text-base">Live Demo</p>
             </button>
-            <button className="border-2 border-white p-2 text-sm hover:border-white hover:text-[#C778DD]">
-              <a href={github}>
-                Github <i className="bx bx-expand-horizontal"></i>
-              </a>
+          </Link>
+        )}
+        {github && (
+          <Link href={github}>
+            <button className="px-3 py-1 rounded-md bg-gray-400 flex justify-center items-center text-white gap-2 shadow-md bg-opacity-60 hover:bg-opacity-80 hover:bg-gray-300 transition duration-200 ease-in-out">
+              <i className="bx bxl-github text-2xl"></i>
+              <p className="text-base">GitHub</p>
             </button>
-          </div>
-        </div>
+          </Link>
+        )}
       </div>
     </div>
   );
