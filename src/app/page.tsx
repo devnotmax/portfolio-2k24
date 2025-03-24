@@ -7,6 +7,8 @@ import { HomeProjects } from "../components/HomeProjects";
 import { Skills } from "../components/Skills";
 import { AboutMe } from "../components/AboutMe";
 import { Contacts } from "../components/contacts";
+import WorkExperience from "../components/WorkExperience";
+import {TimelineExperience} from "../components/TimeLine";
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +17,8 @@ const Home: React.FC = () => {
         <Hero />
         <Quote />
         <HomeProjects />
+        {/* <WorkExperience /> */}
+        <TimelineExperience />
         <Skills />
         <AboutMe />
         <Contacts />

@@ -4,7 +4,7 @@ export interface Iproyect {
     description: string;
     img: string;
     live?: string;
-    github: string;
+    github?: string;
 }
 
 export default Iproyect;
