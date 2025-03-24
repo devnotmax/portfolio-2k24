@@ -1,10 +1,14 @@
 import { proyects } from "../../mocks/proyects";
 import { CardProject } from "./CardProject";
+import { TitleHeader } from "../../components/TitleHeader";
 
-const workspage = () => {
+const WorksPage = () => {
   return (
-    <div className="container mx-auto p-8 grid grid-cols-1 gap-4">
-      {proyects.map((proyect) => (
+    <div className="px-4 py-6 md:p-8">
+      <div className="container mx-auto max-w-6xl">
+        <TitleHeader title="Proyectos" />
+        <div className="grid grid-cols-1 gap-6 md:gap-8">
+          {proyects.map((proyect) => (
             <CardProject
               key={proyect.title}
               title={proyect.title}
@@ -14,9 +18,11 @@ const workspage = () => {
               live={proyect.live}
               github={proyect.github}
             />
-      ))}
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
-export default workspage;
+export default WorksPage;
