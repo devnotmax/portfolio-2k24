@@ -5,6 +5,7 @@ export default interface Props {
   title: string;
   technologies: string[];
   description: string;
+  subTitle?: string;
   img: string;
   live: string;
   github: string;
@@ -15,6 +16,7 @@ export const ProjectsCards = ({
   technologies,
   description,
   live,
+  subTitle,
   github,
 }: Props) => {
   return (
@@ -23,7 +25,9 @@ export const ProjectsCards = ({
         <h2 className="text-2xl font-inter text-white font-bold">{title}</h2>
       </div>
       <div className="mb-4 h-20 overflow-hidden flex-shrink-0">
-        <p className="text-gray-500 text-sm font-inter font-medium">{description}</p>
+        <p className="text-gray-500 text-sm font-inter font-medium">
+          {description}
+        </p>
       </div>
       <div className="flex flex-wrap gap-2 mb-4 items-center">
         {technologies.map((tec) => (

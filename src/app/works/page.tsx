@@ -15,8 +15,9 @@ const WorksPage = () => {
               technologies={proyect.technologies}
               description={proyect.description}
               img={proyect.img}
-              live={proyect.live}
-              github={proyect.github}
+              live={proyect.live ?? ""}
+              github={proyect.github ?? ""}
+              workingOn={proyect.workingOn ?? false}
             />
           ))}
         </div>

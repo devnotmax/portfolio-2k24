@@ -36,6 +36,7 @@ export const proyects: Iproyect[] = [
     title: "Studify",
     technologies: ["Html", "Css", "JavaScript"],
     description: "Pomodoro App. Creada con html, css y javascript.",
+    workingOn: true,
     img: "/projects/studify-app.jpg",
     github: "https://github.com/devnotmax/iTurnito",
     live: "https://studify.vercel.app/",
