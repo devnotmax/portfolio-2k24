@@ -32,7 +32,7 @@ export default function Avatar3D() {
         <directionalLight position={[5, 5, 5]} intensity={1} />
         <Suspense fallback={null}>
           <AvatarModel />
-          <Environment files="/studio.exr" background />
+          <Environment files="/studio.hdr" background />
         </Suspense>
         <OrbitControls enableZoom={true} target={[0, 0, 0]} />
       </Canvas>
