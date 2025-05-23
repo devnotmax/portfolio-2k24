@@ -9,7 +9,7 @@ export const AboutMe = () => (
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8">
         <div className="container p-8">
           <Image
-            src="/develop.jpeg"
+            src="/profile-pic.jpg"
             alt="profile"
             width={600}
             height={600}
