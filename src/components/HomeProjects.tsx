@@ -1,51 +1,45 @@
 import { ProjectsCards } from "./ProjectsCard";
 import TitleHeader from "../components/TitleHeader";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export const HomeProjects = () => {
   return (
     <div className="px-4 py-6 md:p-8 flex flex-col items-center w-full">
       <div className="container max-w-7xl mx-auto">
-        <TitleHeader title="Proyectos" />
+        <TitleHeader
+          title="Proyectos"
+          action={
+            <Link href="/works">
+              <ArrowRight className="text-[#C778DD] hover:text-white transition-colors w-6 h-6" />
+            </Link>
+          }
+        />
 
         <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-4 justify-items-center">
           <ProjectsCards
-            title="Http invaders"
-            technologies={["react", "typescript", "tailwind"]}
-            description="WebApp para consultas HTTP a APIs."
-            img="/projects/http invaders.jpg"
-            live="https://http-invader.vercel.app/"
-            github="https://github.com/devnotmax/http-invader"
-          />
-
-          <ProjectsCards
-            title="Iturnito"
-            technologies={[
-              "NextJS",
-              "TailwindCSS",
-              "TypeScript",
-              "Express",
-              "postgreSQL",
-            ]}
-            description="Sistema de gestión de turnos. Creado como proyecto final del modulo 3 de la carrera de Programación fullstack en SoyHenry."
-            img="/projects/iTurnito.png"
-            live="https://github.com/devnotmax/iTurnito"
-            github="https://github.com/devnotmax/iTurnito"
-          />
-
-          <ProjectsCards
             title="Studify"
-            technologies={["Html", "Css", "Javascript"]}
-            description="Pomodoro App. Creada con html, css y javascript."
+            technologies={["React", "TypeScript", "TailwindCSS"]}
+            description="App web de productividad basada en la técnica Pomodoro. Permite gestionar tiempos de estudio y descanso con una interfaz moderna, minimalista y responsive."
             img="/projects/studify-app.jpg"
-            live="www.pablito.com"
-            github="github.com/devnotmax"
+            live="https://studify.vercel.app/"
+            github="https://github.com/devnotmax/studify"
           />
-
-          <div className="flex justify-center items-center w-full h-full min-h-[12rem] sm:min-h-[15rem]">
-            <button className="opacity-80 text-white font-semibold py-2 px-4 rounded-lg hover:bg-secondary-color transition duration-300 flex justify-center items-center">
-              <i className="bx bx-chevrons-right text-xl bg-[var(--primary-color)] p-4 rounded-xl opacity-55"></i>
-            </button>
-          </div>
+          <ProjectsCards
+            title="Ordenapp"
+            technologies={["React", "Typescript", "Material UI"]}
+            description="App de gestión de pedidos para restaurantes. Permite tomar, modificar y visualizar órdenes en tiempo real."
+            img="/projects/ordenapp.jpeg"
+            live="https://ordenapp.byroncode.com/"
+          />
+          <ProjectsCards
+            title="Boolepad"
+            technologies={["React", "Typescript", "TailwindCSS"]}
+            description="editor de pseudocódigo moderno y minimalista, diseñado para ayudarte a escribir, estructurar y exportar tus algoritmos de forma clara y eficiente."
+            img="/projects/ordenapp.jpeg"
+            live="https://boole-pad.vercel.app/"
+            github="https://github.com/devnotmax/boolePad"
+          />
         </section>
       </div>
     </div>

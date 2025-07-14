@@ -1,6 +1,9 @@
+"use client";
+
 import type { Iproyect } from "../../interface/proyect";
 import Image from "next/image";
 import { ExternalLink, Github } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 interface CardProjectProps {
   title: string;
@@ -10,6 +13,7 @@ interface CardProjectProps {
   img: string;
   live: string;
   github: string;
+  slug: string;
 }
 
 export const CardProject: React.FC<CardProjectProps> = ({
@@ -20,11 +24,25 @@ export const CardProject: React.FC<CardProjectProps> = ({
   workingOn = false,
   live,
   github,
+  slug,
 }: Iproyect) => {
+  const router = useRouter();
+
+  const handleClick = (e: React.MouseEvent) => {
+    // Si el clic fue en un botón, no navegar
+    if ((e.target as HTMLElement).closest("a")) {
+      return;
+    }
+    router.push(`/works/${slug}`);
+  };
+
   return (
-    <div className="overflow-hidden rounded-xl border border-zinc-800 bg-[#1a1d21] shadow-lg transition-all hover:shadow-[#C778DD]/10 flex flex-col">
+    <div
+      onClick={handleClick}
+      className="overflow-hidden rounded-xl border border-zinc-800 bg-[#1a1d21] shadow-lg transition-all hover:shadow-[#C778DD]/10 flex flex-col h-full cursor-pointer"
+    >
       {/* Imagen tipo banner */}
-      <div className="relative h-[200px] w-full">
+      <div className="relative aspect-[16/9] w-full">
         <Image
           src={img || "/placeholder.svg"}
           alt={title}
@@ -91,6 +109,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-full items-center justify-center gap-2 rounded-md border border-zinc-700 bg-[#111315] px-3 py-2 text-white transition duration-200 hover:border-[#4ade80] hover:text-[#4ade80] sm:w-auto"
+              onClick={(e) => e.stopPropagation()}
             >
               <ExternalLink className="h-4 w-4" />
               <span className="text-sm md:text-base">Live Demo</span>
@@ -102,6 +121,7 @@ export const CardProject: React.FC<CardProjectProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-full items-center justify-center gap-2 rounded-md border border-zinc-700 bg-[#111315] px-3 py-2 text-white transition duration-200 hover:border-[#4ade80] hover:text-[#4ade80] sm:w-auto"
+              onClick={(e) => e.stopPropagation()}
             >
               <Github className="h-4 w-4" />
               <span className="text-sm md:text-base">GitHub</span>

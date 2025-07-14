@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "company": "Byron Code",
+    "role": "Frontend Developer",
+    "period": "Noviembre 2024 - Mayo 2025",
+    "location": "Remoto",
+    "status": "Completado",
+    "description": "Trabajé como Frontend Developer en Byron Code, formando parte del equipo encargado de Ordenap, una plataforma integral para la gestión de restaurantes. Mi labor se centró en el desarrollo de funcionalidades clave dentro del sistema, creando interfaces modernas, eficientes y alineadas con las necesidades del rubro gastronómico. Utilicé tecnologías como React, TypeScript y Material UI, trabajando de forma colaborativa con backend y diseño.",
+    "technologies": ["React", "TypeScript", "Material UI"],
+    "achievements": [
+      "Implementación de tickets personalizados y estéticamente mejorados para ventas y facturación, utilizando QZ Tray y ESC/POS",
+      "Participación activa en el desarrollo de la funcionalidad de facturación electrónica integrada con Arca",
+      "Contribución al módulo de cierres de caja, mejorando el control financiero diario",
+      "Desarrollo de interfaces claras, responsivas y centradas en la experiencia del usuario",
+      "Colaboración fluida en un equipo multidisciplinario bajo metodologías ágiles"
+    ],
+    "color": "purple"
+  }
+]

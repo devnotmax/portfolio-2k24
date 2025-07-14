@@ -1,0 +1,172 @@
+{
+  "skillCategories": {
+    "languages": {
+      "title": "Lenguajes",
+      "icon": "Code",
+      "color": "purple",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 80,
+          "experience": "2+ años",
+          "icon": "/typescript.svg"
+        },
+        {
+          "name": "JavaScript",
+          "level": 95,
+          "experience": "3+ años",
+          "icon": "/javascript.svg"
+        },
+        {
+          "name": "HTML5",
+          "level": 98,
+          "experience": "4+ años",
+          "icon": "/html.svg"
+        },
+        {
+          "name": "CSS3",
+          "level": 92,
+          "experience": "4+ años",
+          "icon": "/css.svg"
+        }
+      ]
+    },
+    "databases": {
+      "title": "Databases",
+      "icon": "Database",
+      "color": "green",
+      "skills": [
+        {
+          "name": "PostgreSQL",
+          "level": 80,
+          "experience": "1+ año",
+          "icon": "/postgres.svg"
+        }
+      ]
+    },
+    "frameworks": {
+      "title": "Frameworks",
+      "icon": "Layers",
+      "color": "orange",
+      "skills": [
+        {
+          "name": "React",
+          "level": 92,
+          "experience": "2+ años",
+          "icon": "/react.svg"
+        },
+        {
+          "name": "Next.js",
+          "level": 88,
+          "experience": "1+ año",
+          "icon": "/next-js.svg"
+        },
+        {
+          "name": "Node.js",
+          "level": 85,
+          "experience": "2+ años",
+          "icon": "/node.svg"
+        },
+        {
+          "name": "Redux",
+          "level": 80,
+          "experience": "2+ años",
+          "icon": "/redux.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "level": 92,
+          "experience": "2+ años",
+          "icon": "/tailwindcss.svg"
+        }
+      ]
+    },
+    "libraries": {
+      "title": "Librerías",
+      "icon": "Package",
+      "color": "teal",
+      "skills": [
+        {
+          "name": "Framer Motion",
+          "level": 40,
+          "experience": "Menos de 1 año",
+          "icon": "🎞️"
+        },
+        {
+          "name": "Three.js",
+          "level": 30,
+          "experience": "Menos de 1 año",
+          "icon": "🧊"
+        }
+      ]
+    }
+  },
+  "certifications": [
+    {
+      "id": 5,
+      "title": "Programador Universitario",
+      "institution": "FACET - Universidad Nacional de Tucumán",
+      "description": "Carrera universitaria orientada al desarrollo de software y fundamentos de la computación.",
+      "date": "2025 - Actualidad",
+      "status": "En curso",
+      "credentialId": "FCEyT-2023-001",
+      "skills": [
+        "Algoritmos",
+        "Estructuras de Datos",
+        "Programación en C",
+        "Matemática Discreta"
+      ],
+      "url": ""
+    },
+    {
+      "id": 4,
+      "title": "Programación Full Stack",
+      "institution": "SoyHenry",
+      "description": "Bootcamp intensivo de desarrollo full-stack",
+      "date": "2024",
+      "status": "Completado",
+      "credentialId": "SH-2023-001",
+      "skills": ["Full Stack", "React", "Node.js", "PostgreSQL"],
+      "url": "https://view.pok.tech/c/a881bb5c-b106-446f-8ff4-571b424bb7c9"
+    },
+    {
+      "id": 2,
+      "title": "Argentina Programa 4.0",
+      "institution": "IT Master Academy",
+      "description": "Programación Front-End",
+      "date": "2023",
+      "status": "Completado",
+      "credentialId": "ITMAP402023LIUZKGTWDAPQSNF",
+      "skills": ["JavaScript", "React", "Frontend Development"],
+      "url": "https://www.itmaster.app/certificates?id=ITMAP402023LIUZKGTWDAPQSNF"
+    },
+    {
+      "id": 1,
+      "title": "Argentina Programa 4.0",
+      "institution": "IT Master Academy",
+      "description": "HTML y CSS",
+      "date": "2023",
+      "status": "Completado",
+      "credentialId": "ITMAP402023WFGUKVAFMPEAIKA",
+      "skills": ["HTML", "CSS", "Responsive Design"],
+      "url": "https://www.itmaster.app/certificates?id=ITMAP402023WFGUKVAFMPEAIKA"
+    },
+    {
+      "id": 3,
+      "title": "Introducción al desarrollo Web",
+      "institution": "Coderhouse",
+      "description": "Fundamentos del desarrollo web moderno",
+      "date": "2023",
+      "status": "Completado",
+      "credentialId": "CH-2023-001",
+      "skills": ["Web Development", "HTML", "CSS", "JavaScript"],
+      "url": "https://media.licdn.com/dms/image/v2/C4D22AQFuhNk89VXCRQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1654370714186?e=1726704000&v=beta&t=lHcVovAQFEH6pwCmtBiu98Kib0ZlIK9mIneau2H9oCU"
+    }
+  ],
+  "summary": {
+    "technologies": 15,
+    "experience": "3+",
+    "projects": 20,
+    "certifications": 4
+  }
+}

@@ -18,21 +18,20 @@ export const AboutMe = () => (
         </div>
         <div className="text-[1rem] lg:text-[1.20rem] space-y-4 p-8">
           <p>
-            <span className="text-[#C778DD]">¡Soy Maximiliano!</span> <br />
-            <span className="text-[#C778DD]">Desarrollador Front-End</span>{" "}
-            especializado en el stack{" "}
-            <span className="text-[#C778DD]">
-              MERN (MongoDB, Express, React, Node.js)
-            </span>{" "}
-            con sede en Argentina 🇦🇷 San Miguel de Tucumán📍.
+            <span className="text-[#C778DD]">¡Hola! Soy Maximiliano,</span><br />
+            Desarrollador Front-End enfocado en <span className="text-[#C778DD]">React</span> y <span className="text-[#C778DD]">TypeScript</span>, con base en San Miguel de Tucumán, Argentina 🇦🇷.
           </p>
           <p>
-            Proactivo y orientado a resolver problemas, me apasiona la
-            naturaleza 🌿, el mate 🧉, los animales 🐾 y las buenas
-            conversaciones 💬. Busco oportunidades para aprender y crecer en
-            desarrollo de software 💻, contribuyendo a proyectos innovadores 🚀
-            en un entorno dinámico. ¡Conectemos! 🤝 Estoy listo para colaborar y
-            aprender con otros apasionados por la tecnología.
+            Me apasiona construir interfaces modernas, accesibles y bien estructuradas utilizando tecnologías como <span className="text-[#C778DD]">React</span>, <span className="text-[#C778DD]">Next.js</span>, <span className="text-[#C778DD]">Tailwind CSS</span> y <span className="text-[#C778DD]">Redux</span>.
+          </p>
+          <p>
+            Soy una persona proactiva, con mentalidad de crecimiento, a quien le encanta resolver problemas y trabajar en equipo. Amante de la naturaleza 🌿, el mate 🧉, los animales 🐾 y las buenas conversaciones 💬, valoro los entornos colaborativos donde se aprende y se construye en conjunto.
+          </p>
+          <p>
+            ✨ Siempre estoy abierto a nuevos desafíos, a sumar valor en proyectos dinámicos 🚀 y a seguir creciendo como profesional.
+          </p>
+          <p>
+            ¡Conectemos! 🤝
           </p>
           <div className="flex gap-4 flex-wrap">
             <DownloadCV />

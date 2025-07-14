@@ -1,0 +1,154 @@
+{
+  "projects": [
+    {
+      "slug": "ordenapp",
+      "title": "OrdenApp",
+      "description": "OrdenApp es un sistema de gestión de software diseñado para optimizar la operación de restaurantes, bares y cafeterías. Con una interfaz intuitiva y completamente integrada, OrdenApp permite administrar órdenes, medios de pago, delivery, gestión de mesas, comanderas, impresoras térmicas y facturación, todo en un solo lugar.",
+      "technologies": ["React", "TypeScript", "TailwindCSS", "Axios"],
+      "img": "/projects/ordenapp.jpeg",
+      "live": "https://ordenapp.byroncode.com/",
+      "github": "",
+      "privateCode": true,
+      "workingOn": false,
+      "createdAt": "2023-11-01",
+      "duration": "3 meses",
+      "status": "En producción",
+      "content": {
+        "overview": "OrdenApp es una solución integral para la gestión de establecimientos gastronómicos. El sistema está diseñado para optimizar todos los aspectos de la operación diaria, desde la toma de pedidos hasta la facturación final.",
+        "challenges": [
+          "Implementar un sistema de gestión de mesas en tiempo real",
+          "Integrar múltiples medios de pago",
+          "Desarrollar un sistema de impresión térmica eficiente",
+          "Crear una interfaz intuitiva para personal no técnico"
+        ],
+        "solutions": [
+          "Desarrollo de un sistema de estado en tiempo real usando WebSockets",
+          "Integración con pasarelas de pago populares",
+          "Implementación de un sistema de cola para impresoras",
+          "Diseño de UI/UX enfocado en la usabilidad"
+        ],
+        "features": [
+          "Gestión de mesas y pedidos en tiempo real",
+          "Sistema de delivery integrado",
+          "Múltiples medios de pago",
+          "Impresión térmica de tickets",
+          "Panel de administración completo",
+          "Reportes y estadísticas"
+        ],
+        "images": [
+          {
+            "url": "/projects/ordenapp.jpeg",
+            "alt": "Vista principal de OrdenApp"
+          }
+        ],
+        "metrics": {
+          "linesOfCode": "~4,000",
+          "fileSize": "2MB",
+          "loadTime": "< 3s",
+          "mobileScore": "90/100"
+        }
+      }
+    },
+    {
+      "slug": "studify",
+      "title": "Studify",
+      "description": "App de productividad para estudiantes, con enfoque en el seguimiento de sesiones de estudio y análisis de rendimiento.",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Express",
+        "JavaScript",
+        "PostgreSQL",
+        "Supabase",
+        "Google YouTube API"
+      ],
+      "img": "/projects/studify-app.jpg",
+      "live": "https://studify.vercel.app/",
+      "github": "https://github.com/devnotmax/studify",
+      "workingOn": true,
+      "createdAt": "2024-05-15",
+      "duration": "2 meses",
+      "status": "En desarrollo",
+      "content": {
+        "overview": "Studify es una aplicación web diseñada para estudiantes que desean llevar un registro detallado de sus sesiones de estudio y optimizar su rendimiento. Aunque comenzó como una simple app Pomodoro, evolucionó hacia una plataforma completa de seguimiento de productividad, con funciones analíticas, registro automático de sesiones y herramientas diseñadas para minimizar distracciones.",
+        "challenges": [
+          "Diseñar una arquitectura escalable desde una idea inicialmente simple",
+          "Implementar un sistema automático de registro y visualización de sesiones",
+          "Analizar y representar datos de productividad de forma útil para el usuario",
+          "Integrar contenido externo (YouTube) sin romper la concentración",
+          "Conectar el frontend con una base de datos remota (Supabase)"
+        ],
+        "solutions": [
+          "Migré el proyecto inicial a React con TypeScript para una estructura más robusta",
+          "Utilicé PostgreSQL en Supabase para almacenar sesiones y estadísticas",
+          "Desarrollé un dashboard con métricas visuales sobre horas de estudio y rachas",
+          "Integré la API de YouTube para reproducir contenido dentro de la app sin cambiar de pestaña",
+          "Diseñé una interfaz clara con Tailwind CSS y animaciones suaves con Framer Motion"
+        ],
+        "features": [
+          "Registro automático de sesiones de estudio",
+          "Historial y resumen de sesiones recientes",
+          "Dashboard con análisis de productividad por hora y frecuencia",
+          "Sistema de rachas (streaks) para motivación",
+          "Gamificación como incentivo de hábitos saludables",
+          "Reproductor de YouTube integrado",
+          "Calendario lunar para visualizar fases lunares (elemento simbólico/energético)",
+          "Interfaz responsiva y minimalista en modo claro"
+        ],
+        "images": [
+          "/projects/studify/studify 1.png",
+          "/projects/studify/studify 2.png",
+          "/projects/studify/studify 3.png",
+          "/projects/studify/studify 4.png",
+          "/projects/studify/studify 5.png",
+          "/projects/studify/studify 6.png",
+          "/projects/studify/studify 7.png",
+          "/projects/studify/studify 8.png"
+        ]
+      }
+    },
+    {
+      "slug": "boolepad",
+      "title": "BoolePad",
+      "description": "Un editor de pseudocódigo moderno y minimalista, diseñado para ayudarte a escribir, estructurar y exportar tus algoritmos de forma clara y eficiente. Con autocompletado, snippets, y asistencia por IA, enfocate en la lógica y dejá que la herramienta se encargue del resto.",
+      "technologies": ["React", "TypeScript", "TailwindCSS", "Axios", "Vite"],
+      "img": "/projects/boolepad.png",
+      "live": "https://boole-pad.vercel.app/",
+      "github": "https://github.com/devnotmax/boolePad",
+      "workingOn": false,
+      "createdAt": "2024-01-15",
+      "duration": "2 semanas",
+      "status": "En desarrollo",
+      "content": {
+        "overview": "BoolePad es un editor de pseudocódigo moderno y minimalista, diseñado para ayudarte a escribir, estructurar y exportar tus algoritmos de forma clara y eficiente. Con autocompletado, snippets, y asistencia por IA, enfocate en la lógica y dejá que la herramienta se encargue del resto.",
+        "challenges": [
+          "Integrar autocompletado inteligente y snippets sin comprometer el rendimiento.",
+          "Incluir un asistente con IA que entienda pseudocódigo y sugiera mejoras útiles.",
+          "Permitir la exportación rápida en formatos listos para entregar, como PDF o texto copiado.",
+          "Diseñar una UI clara y enfocada que no distraiga del flujo lógico del algoritmo.",
+          "Mantener el estado del editor aún si el usuario recarga la página o vuelve más tarde."
+        ],
+        "solutions": [
+          "Utilicé Monaco Editor, el mismo motor detrás de VS Code, para una experiencia de escritura profesional.",
+          "Integré la API de OpenAI para ofrecer sugerencias inteligentes y asistencia contextual con IA.",
+          "Desarrollé la aplicación con TypeScript y React, asegurando escalabilidad y código mantenible.",
+          "Implementé TailwindCSS para crear una interfaz limpia, responsive y con foco en la accesibilidad.",
+          "Añadí funcionalidades de exportación a PDF y copiado directo, listas para uso académico o profesional.",
+          " Usé localStorage para persistencia de estado del editor, incluso si el usuario cierra la pestaña.",
+          "Incorporé la API de notificaciones del navegador para alertas rápidas y permisos integrados."
+        ],
+        "features": [
+          "Autocompletado inteligente para acelerar la escritura.",
+          "Snippets predefinidos para estructuras comunes como Si, Mientras, Para y más.",
+          "Asistente con IA para ayudarte a mejorar tus algoritmos o resolver dudas.",
+          "Exportación rápida, ya sea copiando el código o generando un PDF limpio y listo para compartir o entregar.",
+          "Modo oscuro/claro",
+          "Interfaz minimalista y enfocada, para que te concentres en la lógica y el flujo del algoritmo sin distracciones."
+        ],
+        "images": ["/projects/boolepad 2.png", "/projects/boolepad 3.png"]
+      }
+    }
+  ]
+}
