@@ -63,4 +63,15 @@ export const proyects: Iproyect[] = [
     live: "https://studify.vercel.app/",
     slug: "studify",
   },
+  {
+    title: "Labud2",
+    technologies: ["NodeJS", "Express"],
+    description:
+      "Un bot de Telegram asistente diseñado para automatizar y revolucionar el proceso de postulación a empleos, gestionando el envío de correos, CVs y cartas de presentación personalizadas.",
+    workingOn: true,
+    img: "/projects/labud2.jpg",
+    github: "https://github.com/devnotmax/labud2",
+    live: "",
+    slug: "labud2",
+  },
 ];

@@ -3,9 +3,6 @@ import { DownloadCV } from "./downloadCV";
 import Link from "next/link";
 import Avatar3D from "./Avatar3D";
 
-// Cambiar luego el <a> a Link para poder manejar las rutas con Next.js bien
-// Soy Desarrollador Front-End y especializado en el stack MERN (MongoDB, Express, React, Node.js).
-
 export const Hero: React.FC = () => {
   return (
     <>
@@ -14,33 +11,22 @@ export const Hero: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <div className="text-white font-fira-code font-medium text-2xl md:text-3xl">
               <p>
-                Soy{" "}
-                <span className="text-[#C778DD]">Desarrollador Front-End</span>{" "}
-                y especializado en el stack{" "}
+                Desarrollador Web especialista en{" "}
                 <span className="text-[#C778DD]">
-                  MERN (MongoDB, Express, React, Node.js).
+                  React, TypeScript y Express.js
                 </span>
+                .
               </p>
               <p className="text-base md:text-lg mt-4 text-gray-400">
-                Creo sitios web responsivos donde la tecnología se encuentra con
-                la creatividad.
+                Construyo experiencias digitales interactivas y de alto
+                rendimiento, fusionando un código limpio con un diseño creativo.
               </p>
               <div className="flex flex-col md:flex-row gap-2 mt-4">
-                <button className="border-2 border-[#C778DD] p-2 text-sm hover:border-white hover:text-[#C778DD]">
-                  <Link href="/contact">Contactame!!</Link>
-                  {/* Cambiar luego por Links */}
-                </button>
-                <DownloadCV />
+                <DownloadCV title="Contactame" link="/contact" cv={false} />
+                <DownloadCV title="Descargar CV" link="/resume.pdf" cv={true} />
               </div>
             </div>
             <div className="flex justify-center md:justify-end">
-              {/* <Image
-                src="/profile-pic.jpg"
-                alt="profile picture"
-                width={400}
-                height={400}
-                className="rounded-2xl w-full max-w-xs md:max-w-md"
-              /> */}
               <Avatar3D />
             </div>
           </div>

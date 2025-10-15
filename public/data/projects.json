@@ -149,6 +149,48 @@
         ],
         "images": ["/projects/boolepad 2.png", "/projects/boolepad 3.png"]
       }
+    },
+    {
+      "slug": "labud2",
+      "title": "LABUD2",
+      "description": "Un bot de Telegram asistente diseñado para automatizar y revolucionar el proceso de postulación a empleos, gestionando el envío de correos, CVs y cartas de presentación personalizadas.",
+      "technologies": ["Node.js", "JavaScript", "Telegram Bot API", "NPM"],
+      "img": "/projects/labud2.jpg",
+      "live": "",
+      "github": "https://github.com/devnotmax/labud2",
+      "privateCode": false,
+      "workingOn": true,
+      "createdAt": "2025-09-01",
+      "duration": "En desarrollo",
+      "status": "En desarrollo",
+      "content": {
+        "overview": "LABUD2 es un bot de Telegram diseñado para revolucionar el proceso de postulación a empleos. Automatiza la creación y el envío de correos de presentación y CVs, permitiendo al usuario enfocarse en la búsqueda de oportunidades. El proyecto nace de la necesidad de optimizar el tiempo, ofreciendo una herramienta potente, personalizable y segura para cualquier profesional.",
+        "challenges": [
+          "Garantizar el almacenamiento seguro de credenciales sensibles (email y contraseña de aplicación).",
+          "Implementar un sistema de plantillas HTML personalizables para las cartas de presentación.",
+          "Gestionar el almacenamiento y adjunto de archivos (CV en PDF) de forma eficiente.",
+          "Crear un flujo de configuración inicial que sea intuitivo y guiado para el usuario.",
+          "Automatizar el envío de correos a través de una cuenta de Gmail externa de forma segura."
+        ],
+        "solutions": [
+          "Uso de una clave de encriptación (ENCRYPTION_KEY) generada automáticamente para cifrar y proteger los datos del usuario.",
+          "Implementación de un comando para subir plantillas HTML, que utiliza placeholders para insertar dinámicamente la información del usuario.",
+          "El bot almacena el CV en formato PDF y lo adjunta automáticamente en cada postulación.",
+          "Desarrollo de un comando `/config` con un proceso guiado de 4 pasos para configurar los datos esenciales.",
+          "Integración con el servicio de Gmail mediante contraseñas de aplicación para un envío de correos seguro y autenticado sin exponer la contraseña principal."
+        ],
+        "features": [
+          "Postulaciones automatizadas con un solo comando.",
+          "Soporte para plantillas HTML personalizadas para la carta de presentación.",
+          "Gestión de CV en formato PDF para adjuntar en los envíos.",
+          "Encriptación de datos sensibles como email y contraseña de aplicación.",
+          "Proceso de configuración guiado en 4 sencillos pasos.",
+          "Comandos para consultar la configuración actual y eliminar todos los datos.",
+          "Integración futura con IA (Google Gemini) para generar contenido personalizado.",
+          "Roadmap que incluye seguimiento de postulaciones y notificaciones."
+        ],
+        "images": []
+      }
     }
   ]
 }

@@ -34,7 +34,7 @@ export const AboutMe = () => (
             ¡Conectemos! 🤝
           </p>
           <div className="flex gap-4 flex-wrap">
-            <DownloadCV />
+            <DownloadCV title="Descargar CV" link="/Resume.pdf" cv={true} />
             <a
               href="#contact"
               className="border-2 border-[#C778DD] p-2 text-sm hover:border-white hover:text-[#C778DD]"

@@ -24,6 +24,7 @@ export const HomeProjects = () => {
             img="/projects/studify-app.jpg"
             live="https://studify.vercel.app/"
             github="https://github.com/devnotmax/studify"
+            slug="studify"
           />
           <ProjectsCards
             title="Ordenapp"
@@ -31,6 +32,7 @@ export const HomeProjects = () => {
             description="App de gestión de pedidos para restaurantes. Permite tomar, modificar y visualizar órdenes en tiempo real."
             img="/projects/ordenapp.jpeg"
             live="https://ordenapp.byroncode.com/"
+            slug="ordenapp"
           />
           <ProjectsCards
             title="Boolepad"
@@ -39,6 +41,7 @@ export const HomeProjects = () => {
             img="/projects/ordenapp.jpeg"
             live="https://boole-pad.vercel.app/"
             github="https://github.com/devnotmax/boolePad"
+            slug="boolepad"
           />
         </section>
       </div>
